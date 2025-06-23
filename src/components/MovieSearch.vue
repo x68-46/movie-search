@@ -1,7 +1,8 @@
 <script setup>
 import { ref } from 'vue'
+import { OMDB_API_KEY } from '../../api.config.js'
 
-const apiKey = '12345678' // Cseréld ki saját OMDb kulcsodra!
+const apiKey = OMDB_API_KEY
 const query = ref('')
 const movies = ref([])
 const loading = ref(false)
